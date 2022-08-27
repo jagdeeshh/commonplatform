@@ -1,0 +1,12 @@
+<h1>Here's your resilt</h1>
+<ul>
+    <% devices.forEach(function(device){ %>
+        <li><%= device.name %>
+        <ul>
+            <% Object.Keys(device).forEach(function(key){ %>
+                <li><strong><%= key%></strong>:<%=device[key] %></li>
+            <% }); %>
+        </ul>
+        </li>
+         <% }); %>
+</ul>
